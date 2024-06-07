@@ -1,11 +1,10 @@
-# Pie Tracker
+# Yoga Project Tracker
 
 ## Overview
-Pie Tracker is a simple single-page application(SPA)that allowsyou to track the number of pies you eat each week. It's built usingbasic HTML and JavaScript,and uses 'localStorage' for datapersistence.
-
+Yoga Project Tracker is a simple single-page application (SPA) that helps you choose and record yoga practice. It's built using basic HTML, CSS and JavaScript, and uses `localStorage` for data saving.
 
 ### Version Control
-This project uses git and github for tracking changes and managingdevelopment. Please see the github repository here: [URl to githubrepo]
+This project uses git and github for tracking changes and managing development. Please see the github repository here: [URl to githubrepo]
 
 ## Features
 - **Pie Count Display**: The application displays the current countof pies you've eaten this week.
