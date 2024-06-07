@@ -4,34 +4,128 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title></title>
+    <!-- Link to CSS file -->
     <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Inline to CSS style -->
     <style type="text/css".src="style.css"></style>
+    <!-- Link to JavaScript file -->
     <script type="text/javascript" src="script.js"></script>
   </head>
 
   <body>
-  <div class="head">
-    <img class="logo" src="images/logo.png" />
-    <div id="button-home" class="selected" onClick="choice('home')">HOME</div>
-    <div id="button-make" onClick="choice('make')">Make List</div>
-    <div id="button-list" onClick="choice('list')">My List</div>
-  </div>
-  <div class="main">
-    <div class="home">
-      <img class="logo" src="images/logo2.png" />
-      <div class="bgcolor"></div>
-      <div class="title">Enjoy Yoga</div>
-      <div class="text">
-        In addition to leaving out many aspects of Barnum's career, the people
-        and events depicted in the movie were heavily fictionalized. Two of
-        the lead characters, Phillip Carlyle and Anne Wheeler, were completely
-        fictional. The character of Jenny Lind is portrayed as a glamorous
-        woman who becomes infatuated with Barnum and, when he doesn't respond
-        to her overtures, quits the show. In her final performance, she lures
-        Barnum out to the stage for a public kiss in an attempt to flame
+    <!-- Head section of whole web page containing the logo image and navigation buttons -->
+    <div class="head">
+      <img class="logo" src="images/logo.png" />
+      <!-- Navigation buttons that call the 'choice' function on click -->
+      <div id="button-home" class="selected" onClick="choice('home')">HOME</div>
+      <div id="button-make" onClick="choice('make')">Make List</div>
+      <div id="button-list" onClick="choice('list')">My List</div>
+    </div>
+
+    <!-- Main content section -->
+    <div class="main">
+      
+      <!-- Home page -->
+      <div class="home">
+        <img class="logo" src="images/logo2.png" />
+        <div class="bgcolor"></div>
+        <div class="title">Enjoy Yoga</div>
+        <div class="text">
+          Welcome to "Enjoy Yoga", your partner in finding and tracking the most
+          suitable yoga practice. Whether you are a beginner or an experienced
+          practitioner, our platform offers a variety of yoga classes for you 
+          to choose. 
+          In addition, our platform allows you to save and track your progress, 
+          making it easier for you to maintain a consistent practice and achieve 
+          your health goals. 
+          So, Let's click "Make List" to start the journey ~
+        </div>
+      </div>
+
+      <!-- Make section -->
+      <div class="make">
+        <div class="bgcolor"></div>
+        <div class="title">Choose Your Preferences</div>
+        <div class="text">
+          Whether you are looking for relaxation, strength or vitality. 
+          By selecting your preferred type of Action, Duration and 
+          Difficulty level, our system will recommend the most suitable 
+          yoga class for you.
+        </div>
+
+        <!-- Select box section -->
+        <div class="container">
+          <!-- Dropdown for selecting Action Type -->
+          <div class="name">Action Type</div>
+          <select name="ActionType" id="">
+            <option value="1">Stretching and Relaxation Yoga</option>
+            <option value="2">Strength and Balance Yoga</option>
+            <option value="3">Vitality Restoration Yoga</option>
+          </select>
+
+          <!-- Dropdown for selecting Duration -->
+          <div class="name">Duration</div>
+          <select name="Duration" id="">
+            <option value="10 min">Short Length ( 10 min )</option>
+            <option value="30min-1h">Standard Length ( 30min-1h )</option>
+            <option value="1-1.5h">Long Session ( 1-1.5h )</option>
+          </select>
+
+          <!-- Dropdown for selecting Difficulty -->
+          <div class="name">Difficulty</div>
+          <select name="Difficulty" id="">
+            <option value="1">Beginner</option>
+            <option value="2">Intermediate</option>
+            <option value="3">Advanced</option>
+          </select>
+
+          <!-- Button to submit and show popup -->
+          <button onclick="showPopup()">Submit</button>
+        </div>
+
+        <!-- Popup container for recommendations -->
+        <div class="popup-container">
+          <div class="popup">
+            <div class="popup-title">RECOMMENDATION</div>
+            <div class="img"></div>
+            <div class="texts">
+              <div class="text1">Gentle Stretch Yoga</div>
+              <div class="text2">
+                The class focuses on gentle stretching and relaxation, using
+                simple poses and deep breathing to reduce tension and stress
+                Suitable for beginners and helps increase body flexibility and
+                comfort
+              </div>
+              <div class="text3">Difficulty: <div class="difficulty"></div></div>
+              <div class="text3">Duration: <span class="duration"></span></div> 
+            </div>
+            <div style="text-align:center;">
+              <!-- Button to change preferences, calls hidePopup() function -->
+              <div onclick="hidePopup()" class="button-left">
+                Change Preferences
+              </div>
+              <!-- Button to add the recommendation to the list, calls addmake() function -->
+              <div onclick="addmake()" class="button-right">
+                Add To list
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- List section displaying saved plans -->
+      <div class="list">
+        <div class="backgroundColor"></div>
+        <div class="title">MY LIST</div>
+        <div class="container">
+          <!-- Example of a saved plan -->
+          <div class="plan">
+            <div class="text">Gentle Stretch</div>
+            <div class="time">2024/5/14 19:33</div>
+            <img  onclick="deletePlan(event)" class="delete" src="images/delete.png">
+          </div>
+        </div>
       </div>
     </div>
-  </div>
   </body>
-  
 </html>
