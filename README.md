@@ -48,9 +48,9 @@ The second iteration completed the "Recommendation popup" and "My List" interfac
 #### - Symbolic Icon
 ![Star Icon](images/delete.png)
 
-![Star Icon](images/star.png)
-![Star Icon](images/star.png)
-![Star Icon](images/star.png)
+![Star Icon](images/Star.png)
+![Star Icon](images/Star.png)
+![Star Icon](images/Star.png)
 
 ![Star Icon](images/button-left.png)
 ![Star Icon](images/button-right.png)
