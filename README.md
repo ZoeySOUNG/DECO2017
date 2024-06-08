@@ -18,20 +18,20 @@ This project uses git and github for tracking changes and managing development. 
 
 ### Prototype Design Iterations
 
-#### Initial Prototype
+#### - Initial Prototype
 The initial prototype focused on recreating the wire frame. The main goal was to create a simple and intuitive interface that clearly communicates the functions of each accessory. For users to select their favorite yoga and receive recommendations.
 
 ![Home page initially](images/homePageInitial.png)
 ![Make list initially](images/makeListInitial.png)
 ![difficulty initially](images/Difficulty.png)
 
-#### First Iteration
+#### - First Iteration
 Based on feedback from students and tutors, the first iteration included a higher fidelity background image and the "Recommendation Page" was changed from a page to a pop-up window.
 
 ![Home page firstly](images/homePageFirst.png)
 ![Make list firstly](images/difficultyFirst.png)
 
-#### Second Iteration
+#### -  Second Iteration
 The second iteration completed the "Recommendation popup" and "My List" interface with better visual effects. In addition, responsive design principles were introduced to ensure that the application runs on different devices.
 
 ![Home page firstly](images/recomSecond.png)
@@ -56,8 +56,9 @@ The second iteration completed the "Recommendation popup" and "My List" interfac
 ![Star Icon](images/button-right.png)
 
 ### Bootstrap Code Inspiration
-To improve the code for interactive modes in my project, I looked into Bootstrap for inspiration. Here are the links to Bootstrap and my code
+To improve the code for interactive modes in my project, I looked into Bootstrap for inspiration. Here are the links to Bootstrap and my code.
 
+- Dropdown
 ```html
 <!-- Bootstrap CSS -->
 <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
@@ -93,6 +94,40 @@ To improve the code for interactive modes in my project, I looked into Bootstrap
 </div>
  ```
 
+- Popup
+```html
+<!-- Bootstrap CSS -->
+<link href="https://getbootstrap.com/docs/5.3/components/modal/#fullscreen-modal" rel="stylesheet">
+<!-- Popup container for recommendations -->
+<div class="popup-container">
+  <div class="popup">
+    <div class="popup-title">RECOMMENDATION</div>
+    <div class="img"></div>
+    <div class="texts">
+      <div class="text1">Gentle Stretch Yoga</div>
+      <div class="text2">
+        The class focuses on gentle stretching and relaxation, using
+        simple poses and deep breathing to reduce tension and stress
+        Suitable for beginners and helps increase body flexibility and
+        comfort
+      </div>
+      <div class="text3">Difficulty: <div class="difficulty"></div></div>
+      <div class="text3">Duration: <span class="duration"></span></div> 
+    </div>
+    <div style="text-align:center;">
+      <!-- Button to change preferences, calls hidePopup() function -->
+      <div onclick="hidePopup()" class="button-left">
+          Change Preferences
+      </div>
+      <!-- Button to add the recommendation to the list, calls addmake() function -->
+      <div onclick="addmake()" class="button-right">
+        Add To list
+      </div>
+    </div>
+  </div>
+</div>
+ ```
+
 ### Initial Setup
 
 #### Tools and Technologies
@@ -105,7 +140,7 @@ To improve the code for interactive modes in my project, I looked into Bootstrap
 ## Usage
 There are two options:
 
-1. View the website online at the following URL: [http://localhost:1234]
+1. View the website online at the following URL: [http://localhost:1234] by using npm run dev.
 2. 0pen the index.html`file in your web browser to start usingthe application.
    
 After opening the page, click "Make List" to start. 
