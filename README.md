@@ -4,7 +4,7 @@
 Yoga Project Tracker is a simple single-page application (SPA) that helps you choose and record yoga practice. It's built using basic HTML, CSS and JavaScript, and uses `localStorage` for data saving.
 
 ### Version Control
-This project uses git and github for tracking changes and managing development. Please see the github repository here: [URl to githubrepo]
+This project uses git and github for tracking changes and managing development. Please see the github repository here:[https://github.com/ZoeySOUNG/DECO2017.git].
 
 ## Features
 - **Dynamic Recommendations** : Users can select their preferences from a drop-down and the system will dynamically generate yoga program recommendations based on the selected criteria.
